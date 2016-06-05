@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Techvolo Labs</title>
+
+    <!-- Custom CSS -->
+    <link href="css/blog-post.css" rel="stylesheet">
+	<!-- datepicker links -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+
+	<!--Font Awesome (added because you use icons in your prepend/append)-->
+	<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+
+	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Techvolo Labs</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class ="navbar-nav nav navbar-right">
+					 <li>
+                        <a href="signup.html" class="glyphicon glyphicon-user" >&nbsp;Signup</a>
+                     </li>
+					 
+				</ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+		        <!-- /.container -->
+    </nav>
+	<div class="container text-center">
+	
+			<a href="delete.html" class="btn btn-danger" style="margin-top:200px;color:black">Delete user</a>
+			<a href="update.html" class="btn btn-danger" style="margin-left:90px;margin-top:200px;color:black;">Update user</a>
+			<a href="show data.php" class="btn btn-danger" style="margin-left:90px;margin-top:200px;color:black;">Show Data</a>
+
+	</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+	$(document).ready(function(){
+		var date_input=$('#datepick'); //our date input has the name "date"
+		//var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		var container=$('body');
+		
+		date_input.datepicker({
+			format: 'mm/dd/yyyy',
+			todayHighlight: true,
+			autoclose: true,
+		})
+	})
+</script>
+
+<style type="text/css">
+					.datepicker{
+						z-index:1151;
+						}
+					.ui-datepicker { width: 17em; padding: .2em .2em 0; z-index:9000; }
+				</style>
+				
+</body>
+
+</html>
